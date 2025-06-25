@@ -1,0 +1,89 @@
+/* === Body & Background === */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Segoe UI', sans-serif;
+  background: url('https://source.unsplash.com/1600x900/?sky,clouds') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+
+.container {
+  width: 90%;
+  max-width: 400px;
+  padding: 30px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  text-align: center;
+
+  
+  margin: 0;
+}
+
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+
+.input-group {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  width: 70%;
+  border-radius: 10px 0 0 10px;
+  border: none;
+  outline: none;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 18px;
+  background-color: #ffcc00;
+  color: black;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #e6b800;
+}
+
+
+.weather-card {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+
+.loader {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #ffcc00;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  margin: 10px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

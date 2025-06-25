@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌤️ Weather App</h1>
+    
+    <div class="input-group">
+      <input list="cities" id="cityInput" placeholder="Search city..." />
+      <datalist id="cities">
+        <option value="Kolhapur">
+        <option value="Radhanagri">
+        <option value="Goa">
+        <option value="New York">
+        <option value="London">
+        <option value="Delhi">
+        <option value="Tokyo">
+        <option value="Sydney">
+      </datalist>
+      <button onclick="getWeather()">🔍</button>
+    </div>
+    
+    <div class="loader" id="loader" style="display: none;"></div>
+    
+    <div class="weather-card" id="weatherResult">
+      
+    </div>
+    
+    <p id="dateTime"></p>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/skycons/1396634940/skycons.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
